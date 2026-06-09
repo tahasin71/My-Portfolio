@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Software Engineer portfolio — building scalable and elegant web solutions with clean code." />
+    <title>Tahasin's Portfolio</title>
+    <meta name="author" content="Tahasin Ahamad" />
+    <meta property="og:title" content="Tahasin Ahamad — Software Engineer" />
+    <meta property="og:description"
+        content="Software Engineer portfolio — building scalable and elegant web solutions with clean code." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#" class="nav-logo">Tahasin's Portfolio</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+				<a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <!-- <a href="#projects" class="nav-link">Projects</a> -->
+                <a href="#contact" class="btn btn-primary"
+                    style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Contact</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" id="menuIcon">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" id="closeIcon" style="display:none">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+			<a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <!-- <a href="#projects" class="nav-link">Projects</a> -->
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-grid"></div>
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+
+            <div class="container hero-content">
+                <div class="hero-badge anim-1">
+                    <span class="hero-badge-dot"></span>
+                    Available for new opportunities
+                </div>
+
+                <h1 class="anim-2">
+                    Hi, I'm <span class="name">Tahasin Ahamad</span>
+                </h1>
+
+                <p class="hero-desc anim-3">
+                    A passionate Software Engineer crafting scalable, elegant web solutions.
+                    I transform complex problems into simple, beautiful interfaces with clean code architecture.
+                </p>
+
+                <div class="hero-buttons anim-4">
+                    <a href="#about" class="btn btn-primary">
+                        About Me
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <circle cx="12" cy="12" r="10"></circle>
+
+                            <line x1="12" y1="8" x2="12" y2="14"></line>
+                            <polyline points="8 12 12 16 16 12"></polyline>
+
+                        </svg>
+                    </a>
+                    <!-- <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download CV
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="scroll-indicator anim-5">
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="about-grid">
+                        <div class="about-image-container">
+                            <div class="about-image-wrapper">
+                                <div class="about-image-placeholder">
+                                    <img src="./images/photo.jpeg" alt="shaharier-image">
+                                </div>
+                            </div>
+                            <div class="about-decoration"></div>
+                        </div>
+
+                        <div class="about-content">
+                            <h2>Crafting Digital<br><span>Experiences</span></h2>
+                            <p>
+                                Welcome to my portfolio. I am a results-driven Software Engineer specializing in
+                                Angular, Laravel, and Java Spring
+                                Boot. I design and develop scalable, high-performance web applications that balance
+                                clean architecture,
+                                functionality, and user experience.
+                            </p>
+                            <p>
+                                With a strong focus on quality and efficiency, I deliver tailored solutions that meet
+                                specific business needs while
+                                adhering to modern development standards. I thrive in collaborative environments,
+                                embrace new challenges, and remain
+                                committed to continuous learning and innovation in an ever-evolving technology
+                                landscape.
+                            </p>
+
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">2+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <!-- <div class="stat-item">
+                                    <div class="stat-number">20+</div>
+                                    <div class="stat-label">Happy Clients</div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS ========== -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-header text-center">
+                        <span class="section-label">Expertise</span>
+                        <h2 class="section-title">Skills & Technologies</h2>
+                        <p class="section-desc">
+                            A comprehensive toolkit for building modern, scalable applications
+                        </p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="card skill-card">
+                            <div class="skill-card-header">
+                                <div class="skill-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                    </svg>
+                                </div>
+                                <h3>Frontend Development</h3>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">CSS3</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript / TypeScript</span>
+                                    <span class="skill-pct">55%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">jQuery</span>
+                                    <span class="skill-pct">50%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Angular</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-card">
+                            <div class="skill-card-header">
+                                <div class="skill-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
+                                </div>
+                                <h3>Backend Development</h3>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Spring Boot</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">REST APIs</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-card">
+                            <div class="skill-card-header">
+                                <div class="skill-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.66 9-3V5" />
+                                    </svg>
+                                </div>
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL Server</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Oracle</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-card">
+                            <div class="skill-card-header">
+                                <div class="skill-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path
+                                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                                    </svg>
+                                </div>
+                                <h3>Tools & DevOps</h3>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Git & GitHub / GitLab / Bitbucket</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Postman</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Swagger (OpenAPI)</span>
+                                    <span class="skill-pct">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">NPM, NVM, Composer, Maven</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" style="width:80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Education ========== -->
+        <section id="education" class="experience-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-header text-center">
+                        <span class="section-label">Career Path</span>
+                        <h2 class="section-title">Education</h2>
+                        <p class="section-desc">
+                            From a strong science foundation to pursuing a degree in Computer Science.
+                        </p>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role"> Bacehlor of Computer Science
+                                            </h3>
+                                            <p class="timeline-company">GISMA University Of Applied Sciences, Berlin, Germany</p>
+                                        </div>
+                                        <span class="timeline-duration">01/04/2025 - Present</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                       I am currently pursuing a Bachelor's degree in Computer Science at GISMA University of Applied Sciences. Through my studies, I am developing a strong foundation in software development, programming, database management, computer networks, and problem-solving techniques. The program has enhanced my analytical thinking, technical skills, and ability to work on real-world technology projects.
+
+In addition to my academic coursework, I continuously improve my practical skills through personal projects and hands-on experience with technologies such as Python, Java, JavaScript, React, Node.js, MySQL, Git, and GitHub. I am passionate about software engineering and committed to building innovative and efficient solutions that create positive user experiences.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role">Bachelor of Science in Computer Science And Engineering</h3>
+                                            <p class="timeline-company">Notre Dame University Bangladesh, Dhaka, Bangladesh</p>
+                                        </div>
+                                        <span class="timeline-duration">01/06/2023 - 20/12/2025</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                       Completed coursework in Computer Science with a strong focus on programming, mathematics, and engineering fundamentals. Studied subjects including Java programming, C programming, HTML, CSS, Mathematics, Physics, Chemistry, Algorithm Analysis and Design, Computer Architecture, Digital Logic Design, Electronic Devices and Circuits, Electrical Circuit Analysis, Communicative English, and Advancing English Skills Lab.
+
+Developed problem-solving, analytical thinking, and software development skills through academic projects and practical assignments. Gained foundational knowledge in computer systems, algorithms, programming concepts, web development, and digital electronics.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role">Higher Secondary Certificate (HSC)</h3>
+                                            <p class="timeline-company">Dr. Mahbubur Rahman Mollah College, Dhaka, Bangladesh</p>
+                                        </div>
+                                        <span class="timeline-duration">01/07/2019 - 14/02/2022</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                       Completed Higher Secondary Education with a focus on Science, studying Mathematics, Physics, Chemistry, Biology, Information and Communication Technology (ICT), English, and Bangla.
+
+Achieved an outstanding academic result with a GPA of 5.00 out of 5.00. Developed strong analytical, problem-solving, and scientific reasoning skills, providing a solid foundation for further studies in Computer Science and technology-related fields.
+                                    </p>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		        <!-- ========== EXPERIENCE ========== -->
+		 <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-header text-center">
+                        <span class="section-label">Career Path</span>
+                        <h2 class="section-title">Work Experience</h2>
+                        <p class="section-desc">
+                            My professional journey and the impact I've made
+                        </p>
+                    </div>
+
+                   
+                           
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role">Software Engineer</h3>
+                                            <p class="timeline-company">Adventure Dhaka Limited</p>
+                                        </div>
+                                        <span class="timeline-duration">15/03/2025 - 20/11/2025</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                        Completed the Adyen Payment Gateway implementation and database migration for
+                                        the Skyticket Online Travel Agency
+                                        (OTA) Management System using PHP 8.1 and MySQL 8.4. The integration enabled
+                                        secure international ticket bookings,
+                                        localized and multi-currency payment processing, and support for global and
+                                        local payment methods, while the
+                                        migration enhanced system performance and reliability across flight and hotel
+                                        booking, transaction management, user
+                                        accounts, reservations, customer support, and multi-region operations.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role">Software Engineer & Analyst</h3>
+                                            <p class="timeline-company">FieldBooster Limited</p>
+                                        </div>
+                                        <span class="timeline-duration">01/08/2024 - 13/03/2025</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                        Developed multiple web applications using Laravel (PHP 7.4–8.1, Laravel 5.4–10)
+                                        and MySQL, including the Bkkb
+                                        Welfare Board Application (BKKB) featuring division-wise user management,
+                                        multi-level approval workflow, donation
+                                        reporting, and database backup; the Delivery Management System for BRAC Bank PLC
+                                        with branch-wise service requests,
+                                        delivery partner management, workflow tracking, and email notifications; and a
+                                        Company Website with dynamic content
+                                        management, client and service management, customer queries, and invoice
+                                        generation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="card timeline-card">
+                                    <div class="timeline-header">
+                                        <div>
+                                            <h3 class="timeline-role">Intern</h3>
+                                            <p class="timeline-company">Technofair IT Limited</p>
+                                        </div>
+                                        <span class="timeline-duration">17/03/2024 - 31/08/2024</span>
+                                    </div>
+                                    <p class="timeline-desc">
+                                        Subscription Management System is a web-based application built with Angular,
+                                        .NET (C# & ASP.NET Core), and SQL Server
+                                        2022. It manages subscribers, channels, packages, set-top boxes, CAS, and user
+                                        access, including activation and
+                                        deactivation of services for efficient subscription control.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS ========== -->
+        <!-- <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="section-header text-center">
+                        <span class="section-label">Portfolio</span>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-desc">
+                            A selection of projects I've built and contributed to
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+
+                        <div class="card project-card">
+                            <div class="project-image">
+                                <div class="project-image-placeholder">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <circle cx="8.5" cy="8.5" r="1.5" />
+                                        <polyline points="21 15 16 10 5 21" />
+                                    </svg>
+                                </div>
+                                <div class="project-image-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p class="desc">A full-featured e-commerce solution with product management, cart
+                                    system, payment integration, and real-time inventory tracking.</p>
+                                <div class="project-tags">
+                                    <span class="tag">.NET Core</span>
+                                    <span class="tag">Angular</span>
+                                    <span class="tag">SQL Server</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link primary">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                        </svg>
+                                        Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="reveal">
+                    <div class="contact-wrapper">
+                        <div class="contact-info">
+                            <span class="section-label">Contact</span>
+                            <h2>Let's Work Together</h2>
+                            <p>
+                                Have a project in mind? I'd love to hear about it. Let's discuss how
+                                we can bring your ideas to life and create something amazing together.
+                            </p>
+
+                            <div class="contact-methods">
+                                <a href="mailto:tahasin1999@gmail.com" class="contact-method">
+                                    <div class="contact-method-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                            <polyline points="22,6 12,13 2,6" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-method-label">Email</p>
+                                        <p class="contact-method-value">tahasin1999@gmail.com</p>
+                                    </div>
+                                </a>
+
+                                <a href="tel:+8801973003538" class="contact-method">
+                                    <div class="contact-method-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-method-label">Phone</p>
+                                        <p class="contact-method-value">+49 15567006506</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="contact-method">
+                                    <div class="contact-method-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="contact-method-label">Location</p>
+                                        <p class="contact-method-value">Berlin,Germany</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="social-links">
+
+                                <a href="https://www.linkedin.com/in/tahasin-ahamad-aa02111b9" class="social-link"
+                                    aria-label="LinkedIn" style="--social-color: #0A66C2;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                    </svg>
+                                </a>
+
+                                <a href="https://github.com/tahasin71" class="social-link" aria-label="GitHub"
+                                    style="--social-color: #181717;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+
+                                <a href="https://www.facebook.com/tahasin.ahamad71" class="social-link"
+                                    aria-label="Facebook" style="--social-color: #1877F2;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    </svg>
+                                </a>
+
+                                <!-- <a href="#" class="social-link" aria-label="Twitter" style="--social-color: #000000;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div class="contact-form-wrapper">
+                            <div class="card" id="contactForm">
+                                <form id="contactFormEl">
+                                    <div class="form-group">
+                                        <label class="form-label" for="nameInput">Your Name</label>
+                                        <input type="text" class="form-input" id="nameInput" placeholder="John Doe" />
+                                        <p class="form-error" id="nameError"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="emailInput">Email Address</label>
+                                        <input type="email" class="form-input" id="emailInput"
+                                            placeholder="john@example.com" />
+                                        <p class="form-error" id="emailError"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="messageInput">Message</label>
+                                        <textarea class="form-input" id="messageInput"
+                                            placeholder="Tell me about your project..."></textarea>
+                                        <p class="form-error" id="messageError"></p>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary form-submit">
+                                        Send Message
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="22" y1="2" x2="11" y2="13" />
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="card success-message" id="successMessage" style="display:none">
+                                <div class="success-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </div>
+                                <h3>Message Sent!</h3>
+                                <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Tahasin's Portfolio. All rights reserved.</p>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" />
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
